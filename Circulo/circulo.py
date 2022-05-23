@@ -29,3 +29,19 @@ class Circulo:
         p = 2 * math.pi * self.radio
         return p
 
+    def set_radio_modificable(self, rmodificado):
+        try:
+            if type(rmodificado) != str:
+                if float(rmodificado) > 0:
+                    self.radio = rmodificado
+                    print("Haz modificado el radio del circulo a el valor:", rmodificado)
+                else:
+                    raise ""
+            else:
+                raise ""
+        except TypeError:
+            print("Lo siento, no es posible modificar el radio. Debes ingresar un radio mayor a 0.\n¡Inténtalo de "
+                  "nuevo!")
+
+
+
