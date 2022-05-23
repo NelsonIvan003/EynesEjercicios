@@ -21,3 +21,11 @@ class Circulo:
             print("Hola! El radio del circulo que deseas crear debe ser mayor que 0 ... Te saluda atentamente 'Tu "
                   "Buen Amigo, 'Spiderman'")
 
+    def get_area(self):
+        a = math.pi * (self.radio ** 2)
+        return a
+
+    def get_perimetro(self):
+        p = 2 * math.pi * self.radio
+        return p
+
