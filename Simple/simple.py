@@ -35,7 +35,7 @@ print(lista)
 
 def _test():
     """
-    Examino si la lista en verdad se encuentra ordenada verificando que la edad
+    Examino si la lista en verdad se encuentra ordenada comprobando que la edad
     del primer diccionario sea mayor o igual que la del segundo.
     Y también verifico que la edad del último diccionario sea menor o igual que la del penúltimo.
     Es muy improbable que random.randint en el rango del 1 al 100 me cree 10 números iguales, por lo
