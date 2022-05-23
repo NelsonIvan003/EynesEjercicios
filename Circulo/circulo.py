@@ -43,5 +43,20 @@ class Circulo:
             print("Lo siento, no es posible modificar el radio. Debes ingresar un radio mayor a 0.\n¡Inténtalo de "
                   "nuevo!")
 
+    def agrandar_cirulo(self, agrandar):
+        try:
+            if type(agrandar) != str:
+                if float(agrandar) > 0:
+                    tamanio = agrandar * self.radio
+                    nuevo = Circulo(tamanio)
+                    print("Felicitaciones!!! Creaste un nuevo Objeto de radio:", tamanio)
+                    return nuevo
+                else:
+                    raise ""
+            else:
+                raise ""
+        except TypeError:
+            print("Lo siento, no es posible crear un nuevo círculo. Debes ingresar un radio mayor a 0.\n¡Vuelve a "
+                  "intentarlo!")
 
 
