@@ -3,6 +3,7 @@ import doctest
 
 
 def crear_lista_diccionarios():
+    #
     # [{'id':1, 'edad': 'aleatorio(1,100)}]
     lst = []
     for i in range(10):
